@@ -1,6 +1,6 @@
 {
   "name": "prop-values",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Returns an array of the values of all properties (owned and inherited) of an object.",
   "keywords": [
     "object",
