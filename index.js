@@ -2,6 +2,6 @@
 
 const ownAll = require('own-all')
 const ownValues = require('own-values')
-const supportBindOperator = require('sbo')
+const sbo = require('sbo')
 
-module.exports = supportBindOperator((obj, {own, enumOnly} = {}) => (enumOnly ? Object.values : ownValues)(own ? obj : ownAll(obj))[Symbol.iterator]())
+module.exports = sbo((obj, {own, enumOnly} = {}) => (enumOnly ? Object.values : ownValues)(own ? obj : ownAll(obj)))
